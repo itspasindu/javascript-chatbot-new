@@ -16,6 +16,8 @@
     "url": "https://github.com/devXprite/javascript-chatbot/issues"
   },
   "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -e js,json,less,css",
     "start": "node index.js",
     "less": "lessc public/src/styles/styles.less public/src/styles/compiled.min.css -x --source-map",
@@ -25,7 +27,9 @@
   "devDependencies": {
     "eslint": "^8.17.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "axios": "^0.27.2",
